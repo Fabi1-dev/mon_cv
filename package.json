@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "name": "mon_cv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "encore dev",
+    "dev-server": "encore dev --watch",
+    "build": "encore production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabi1-dev/mon_cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fabi1-dev/mon_cv/issues"
+  },
+  "homepage": "https://github.com/Fabi1-dev/mon_cv#readme",
+  "description": "",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^5.1.0",
+    "webpack-notifier": "^1.15.0"
+  }
+}

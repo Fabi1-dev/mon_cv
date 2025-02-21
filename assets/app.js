@@ -1,4 +1,5 @@
-import './bootstrap.js';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Pour le CSS de Bootstrap
+import 'bootstrap';     
 /*
  * Welcome to your app's main JavaScript file!
  *
