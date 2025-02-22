@@ -1,20 +1,30 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Accueil - Mon Portfolio
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<div
+		class="container mt-5">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+		<!-- Hero Section -->
+		<section class="text-center py-5">
+			<h1 class="display-4">Fabien Marcolla</h1>
+			<p class="lead">Développeur Web & Mobile</p>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/fabienmarcolla/Documents/Portfolio/mon_cv/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>/Users/fabienmarcolla/Documents/Portfolio/mon_cv/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
+			<a href="{{ asset('MARCOLLA_Fabien_CV.pdf') }}" class="btn btn-primary btn-lg" download="Fabien_Marcolla_CV.pdf">Télécharger mon CV</a>
+		</section>
+
+		<!-- Section À propos -->
+		<section class="text-center my-5">
+			<h2>À propos de moi</h2>
+			<p class="text-muted">Ancien responsable réseau commercial, j’ai choisi de me reconvertir dans le développement web et mobile pour relever de nouveaux défis et donner une nouvelle orientation à ma carrière. Actuellement en formation, j’acquiers chaque jour de nouvelles compétences et mets en pratique mes connaissances à travers divers projets.
+				
+				Ce site est à la fois un portfolio et un témoin de mon évolution dans ce domaine passionnant. Toujours en quête d’apprentissage et d’amélioration, je suis à la recherche de nouvelles opportunités pour continuer à progresser et apporter ma contribution au monde du numérique.</p>
+		</section>
+
+
+	</div>
+
+
 {% endblock %}
