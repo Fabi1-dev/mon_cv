@@ -1,20 +1,89 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProjetController!{% endblock %}
+{% block title %}Mes projets!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+ <section id="stacks">
+    <h2>Mes Stacks</h2>
+    <div class="stacks-container">
+        <div class="stack">
+            <span>HTML / CSS / JavaScript</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="stack">
+            <span>React</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="stack">
+            <span>PHP / Symfony</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="stack">
+            <span>MySQL</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="stack">
+            <span> Ionic</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="stack">
+            <span>MongoDB</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="stack">
+            <span>Wordpress</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<section id="projets">
+    <h2>Projets réalisés</h2>
+    <div class="projets-container">
+        <div class="projet-card">
+            <h3>📌 Mon Portfolio</h3>
+            <p>Ce site personnel pour présenter mes compétences et projets.</p>
+            <div class="projet-links">
+                <a href="https://github.com/Fabi1-dev/mon_cv" target="_blank">Voir le code</a>
+            </div>
+        </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/fabienmarcolla/Documents/Portfolio/mon_cv/src/Controller/ProjetController.php</code></li>
-        <li>Your template at <code>/Users/fabienmarcolla/Documents/Portfolio/mon_cv/templates/projet/index.html.twig</code></li>
-    </ul>
-</div>
+        <div class="projet-card">
+            <h3>Boutique en ligne</h3>
+            <p>TP de groupe : Création d'une boutique en ligne avec gestion des utilisateurs, base de données, système de commentaires, etc.</p>
+            <div class="projet-links">
+                <a href="https://github.com/promo1124/Projet-G1" target="_blank">Voir le code</a>
+                <a href="https://promo1124-groupe1.alwaysdata.net/projet-g1/" target="_blank">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+window.addEventListener("load", function() {
+    const stacks = document.querySelectorAll('.progress');
+
+    
+    stacks.forEach(function(bar) {
+        setTimeout(function() {
+            bar.style.width = '50%'; 
+        }, 100); 
+    });
+});
+</script>
+
 {% endblock %}

@@ -4,27 +4,27 @@
 {% endblock %}
 
 {% block body %}
-	<div
-		class="container mt-5">
+    <div class="container mt-5">
+        
+        <!-- Section de présentation -->
+        <section class="text-center py-5">
+            <h1 class="display-4 font-weight-bold">Fabien Marcolla</h1>
+            <p class="lead text-muted">Développeur Web & Mobile</p>
 
-		<!-- Hero Section -->
-		<section class="text-center py-5">
-			<h1 class="display-4">Fabien Marcolla</h1>
-			<p class="lead">Développeur Web & Mobile</p>
+            <a href="{{ asset('MARCOLLA_Fabien_CV.pdf') }}" class="btn btn-primary btn-lg mt-3" download="Fabien_Marcolla_CV.pdf">Télécharger mon CV</a>
+        </section>
 
-			<a href="{{ asset('MARCOLLA_Fabien_CV.pdf') }}" class="btn btn-primary btn-lg" download="Fabien_Marcolla_CV.pdf">Télécharger mon CV</a>
-		</section>
+        <!-- Section À propos de moi -->
+        <section class="text-center my-5">
+            <h2 class="font-weight-light">À propos de moi</h2>
+            <p class="lead text-muted">
+                Ancien responsable réseau commercial, j’ai choisi de me reconvertir dans le développement web et mobile pour relever de nouveaux défis et donner une nouvelle orientation à ma carrière. 
+                Actuellement en formation, j’acquiers chaque jour de nouvelles compétences et mets en pratique mes connaissances à travers divers projets.
+            </p>
+            <p class="text-muted">
+                Ce site est à la fois un portfolio et un témoin de mon évolution dans ce domaine passionnant. Toujours en quête d’apprentissage et d’amélioration, je suis à la recherche de nouvelles opportunités pour continuer à progresser et apporter ma contribution au monde du numérique.
+            </p>
+        </section>
 
-		<!-- Section À propos -->
-		<section class="text-center my-5">
-			<h2>À propos de moi</h2>
-			<p class="text-muted">Ancien responsable réseau commercial, j’ai choisi de me reconvertir dans le développement web et mobile pour relever de nouveaux défis et donner une nouvelle orientation à ma carrière. Actuellement en formation, j’acquiers chaque jour de nouvelles compétences et mets en pratique mes connaissances à travers divers projets.
-				
-				Ce site est à la fois un portfolio et un témoin de mon évolution dans ce domaine passionnant. Toujours en quête d’apprentissage et d’amélioration, je suis à la recherche de nouvelles opportunités pour continuer à progresser et apporter ma contribution au monde du numérique.</p>
-		</section>
-
-
-	</div>
-
-
+    </div>
 {% endblock %}

@@ -1,4 +1,118 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 body {
-    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
+
+
+
+/* Styles des stacks */
+.stacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.stacks-container span {
+    background: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Conteneur des cartes projets */
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* Style des cartes projets */
+.projet-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projet-card:hover {
+    transform: translateY(-5px);
+}
+
+.projet-card h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.projet-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Boutons des liens */
+.projet-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.projet-links a:hover {
+    background: #27ae60;
+}
+
+/* Conteneur des stacks */
+.stacks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Style des éléments de stack */
+.stack {
+    text-align: left;
+}
+
+/* Barre de progression */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5px;
+}
+
+/* Animation de la barre de progression */
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    width: 0%; 
+    transition: width 2s ease-in-out; 
+}
+
+#date-time {
+    margin-left: auto; 
+    font-size: 14px;
+    color: #555;
+}
+
